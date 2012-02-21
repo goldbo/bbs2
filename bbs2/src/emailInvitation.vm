@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset='utf-8' />
+</head>
+<style>
+body{ font-size:12px; margin:0px; color:#626262}
+.Font20{ font-size:20px; line-height:20px; color:#1a8bbd;}
+.Font14{  font-size:14px; line-height:18px; color:#b34f0c;}
+.Font12{  font-size:12px; line-height:14px; color:#115577}
+A:link {COLOR: #0B66A0;font-size: 12px;TEXT-DECORATION:underline;}
+A:visited {COLOR: #0B66A0;font-size: 12px;TEXT-DECORATION: underline;}
+A:hover {COLOR: #0B66A0;font-size: 12px;font-style: normal;TEXT-DECORATION:none ;}
+A:active {COLOR: #0B66A0;font-size: 12px;TEXT-DECORATION:underline;}
+</style>
+<body>
+<br />
+<br />
+<table width="650" align="center" border="0" cellspacing="0" cellpadding="0" style="border:3px solid #c0ecff">
+  <tr>
+    <td><br />
+    <br />
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="140" height="5" bgcolor="#c0ecff"></td>
+        <td width="11" bgcolor="#c0ecff"></td>
+        <td></td>
+        <td width="11" bgcolor="#c0ecff"></td>
+        <td width="140" bgcolor="#c0ecff"></td>
+      </tr>
+      <tr>
+        <td height="48" bgcolor="#c0ecff">&nbsp;</td>
+        <td bgcolor="#e4f7ff">&nbsp;</td>
+        <td align="center" bgcolor="#e4f7ff" style="padding-top:15px;"><strong class="Font20">$title</strong></td>
+        <td bgcolor="#e4f7ff">&nbsp;</td>
+        <td bgcolor="#c0ecff">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="5"></td>
+        <td bgcolor="#e4f7ff"></td>
+        <td bgcolor="#e4f7ff"></td>
+        <td bgcolor="#e4f7ff"></td>
+        <td></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="padding:15px; line-height:22px;">
+    <p><strong>在线座谈会 - $title</strong><br />
+      消息发自: $userName<br />
+      会议名称:$message<br /><br>
+    <p>$invitation_times</p>
+    <p>---------------------------------------------------------------------------------------------------</p>
+        点击此链接来参与会议:<br />
+        <a href="$invitation_link">点击此处进入房间</a>
+    <p>--------------------------------------------------------------------</p>
+    <p>如果你在此链接遇到问题, 请拷贝并粘贴此链接到浏览器中:<br />
+      <a href="$invitation_link">$invitation_link</a></p>
+   </td>
+  </tr>
+  <tr>
+    <td height="32" align="center" bgcolor="#f7faff" class="Font12">此信由中国电信《消费者实验室网络社区及模拟体验环境》系统发出，请勿直接回复，谢谢。</td>
+  </tr>
+</table>
+
+</body>
+</html>
+

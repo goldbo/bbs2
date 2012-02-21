@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="jrun_meetingMember" lazy="false" name="cn.jsprun.domain.MeetingMember">
+     <id name="meetingMemberId" type="java.lang.Integer">
+            <column name="meetingMember_id" />
+            <generator class="native" />
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+        </property>
+        <property name="appointmentId" type="java.lang.Integer">
+            <column name="appointment_id" />
+        </property>
+        <property name="isfiltrate" type="java.lang.Integer">
+            <column name="isfiltrate">
+            </column>
+        </property>
+        <property name="isregister" type="java.lang.Integer">
+            <column name="isregister">
+            </column>
+        </property>
+        <property name="iskickout" type="java.lang.Integer">
+            <column name="iskickout">
+            </column>
+        </property>
+        <property name="isscreenout" type="java.lang.Integer">
+            <column name="isscreenout">
+            </column>
+        </property>
+        <property name="addTime" type="java.util.Date">
+            <column name="addTime" length="0" />
+        </property>
+    
+    <many-to-one name="user" class="cn.jsprun.domain.Members" fetch="select"  lazy="false" insert="false" update="false">
+        <column name="user_id" />
+    </many-to-one> 
+    
+    <many-to-one name="appointment" class="cn.jsprun.domain.Appointment" fetch="select"  lazy="false" insert="false" update="false">
+        <column name="appointment_id" />
+    </many-to-one> 
+    
+  </class>
+</hibernate-mapping>
